@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disposition des Sections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="fr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disposition des Sections</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <ul class="nav-links">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Présentation</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <button class="hamburger-button"></button>
+    </header>
+
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+
+    <script>
+      const hamburgerButton = document.querySelector(".hamburger-button");
+      const navLinks = document.querySelector(".nav-links");
+
+      hamburgerButton.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
+
+  </html>
+</body>
+
+</html>

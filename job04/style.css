@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #88c1d0;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 32px;
+}
+
+section {
+    width: 25%;
+    height: 100vh;
+}
+
+.hamburger-button {
+    display: none;
+    cursor: pointer;
+}
+
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links.show {
+    display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block;
+    }
+}
